@@ -1,3 +1,4 @@
-* Change qemu version
+* Change qemu version fot supporting git clone
 * automatic relsease to zip image http://docs.travis-ci.com/user/deployment/releases/
 * clean otcopi code
+* 
