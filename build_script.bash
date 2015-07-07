@@ -1,5 +1,8 @@
 #!/bin/bash
 set -x
+echo $PWD
+cd $CI_HOME
+
 if [ ! -f src/image/*.zip ]
 then
   pushd src/image/

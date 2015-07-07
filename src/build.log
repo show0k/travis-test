@@ -8,10 +8,8 @@
 ++ pushd /home/user/OctoPi/src
 ~/OctoPi/src ~/OctoPi/src
 +++ git rev-parse HEAD
-fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
-Use '--' to separate paths from revisions
-++ export OCTOPI_COMMIT=HEAD
-++ OCTOPI_COMMIT=HEAD
+++ export OCTOPI_COMMIT=149ab4f29aec19a3ec1634f76a781130faad8905
+++ OCTOPI_COMMIT=149ab4f29aec19a3ec1634f76a781130faad8905
 ++ popd
 ~/OctoPi/src
 ++ BUILD_VARIANT=default
@@ -138,8 +136,8 @@ OCTOPI_CHROOT_SCRIPT_PATH = /home/user/OctoPi/src/chroot_script
 +++ eval export OCTOPI_CHROOT_SCRIPT_PATH
 ++++ export OCTOPI_CHROOT_SCRIPT_PATH
 +++ for var in '$vars'
-+++ echo 'OCTOPI_COMMIT = HEAD'
-OCTOPI_COMMIT = HEAD
++++ echo 'OCTOPI_COMMIT = 149ab4f29aec19a3ec1634f76a781130faad8905'
+OCTOPI_COMMIT = 149ab4f29aec19a3ec1634f76a781130faad8905
 +++ eval export OCTOPI_COMMIT
 ++++ export OCTOPI_COMMIT
 +++ for var in '$vars'
@@ -312,11 +310,8 @@ umount: /home/user/OctoPi/src/workspace/mount: not mounted
 ~/OctoPi/src/workspace ~/OctoPi/src
 ++++ previous_command='pushd $OCTOPI_WORKSPACE'
 ++++ this_command='[ -e *.img ]'
-+++ '[' -e 2015-05-05-raspbian-wheezy.img ']'
++++ '[' -e '*.img' ']'
 ++++ previous_command='[ -e *.img ]'
-++++ this_command='rm *.img'
-+++ rm 2015-05-05-raspbian-wheezy.img
-++++ previous_command='rm *.img'
 ++++ this_command='unzip $OCTOPI_ZIP_IMG'
 +++ unzip /home/user/OctoPi/src/image/2015-raspbian-wheezy.zip
 Archive:  /home/user/OctoPi/src/image/2015-raspbian-wheezy.zip

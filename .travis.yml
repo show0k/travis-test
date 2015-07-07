@@ -2,7 +2,12 @@
 language: erlang
 script: bash build_script.bash
 sudo: required
- 
+
+env:
+  global:
+    - REPO="show0k/travis-test"
+    - CI_HOME=`pwd`/$REPO
+
 notifications:
    email:theo.segonds+travisspam@gmail.com
 
