@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+set -x
 function die () {
     echo >&2 "$@"
     exit 1
