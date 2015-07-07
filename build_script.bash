@@ -1,0 +1,15 @@
+#!/bin/bash
+set -x
+if [ ! -f src/image/*.zip ]
+then
+  pushd src/image/
+   $(curl -J -O -L  http://downloads.raspberrypi.org/raspbian_latest)
+  popd
+else
+  echo "zip already present"
+fi
+
+pushd src/
+sudo bash -x build
+popd
+

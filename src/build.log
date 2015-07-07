@@ -1,0 +1,323 @@
+++++ realpath -s build
++++ dirname /home/user/OctoPi/src/build
+++ BUILD_SCRIPT__PATH=/home/user/OctoPi/src
+++ source /home/user/OctoPi/src/common.sh
+++++ realpath -s build
++++ dirname /home/user/OctoPi/src/build
+++ OCTOPI_PATH=/home/user/OctoPi/src
+++ pushd /home/user/OctoPi/src
+~/OctoPi/src ~/OctoPi/src
++++ git rev-parse HEAD
+fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions
+++ export OCTOPI_COMMIT=HEAD
+++ OCTOPI_COMMIT=HEAD
+++ popd
+~/OctoPi/src
+++ BUILD_VARIANT=default
+++ BUILD_FLAVOR=default
+++ WORKSPACE_POSTFIX=
+++ '[' 0 -gt 0 ']'
+++ '[' 0 -gt 1 ']'
+++ '[' default '!=' default ']'
+++ echo -e '--> Building VARIANT default, FLAVOR default'
+--> Building VARIANT default, FLAVOR default
+++ source /home/user/OctoPi/src/config
++++++ realpath -s /home/user/OctoPi/src/config
+++++ dirname /home/user/OctoPi/src/config
++++ CONFIG_DIR=/home/user/OctoPi/src
++++ '[' -n '' ']'
++++ '[' -n '' ']'
++++ '[' -f /home/user/OctoPi/src/config.local ']'
++++ '[' -n '' ']'
++++ OCTOPI_SCRIPT_PATH=/home/user/OctoPi/src
++++ '[' -n '' ']'
++++ OCTOPI_IMAGE_PATH=/home/user/OctoPi/src/image
++++ '[' -n '' ']'
+++++ head -n 1
+++++ ls -t /home/user/OctoPi/src/image/2015-raspbian-wheezy.zip
++++ OCTOPI_ZIP_IMG=/home/user/OctoPi/src/image/2015-raspbian-wheezy.zip
++++ '[' -n '' ']'
++++ OCTOPI_WORKSPACE=/home/user/OctoPi/src/workspace
++++ '[' -n '' ']'
++++ OCTOPI_CHROOT_SCRIPT_PATH=/home/user/OctoPi/src/chroot_script
++++ '[' -n '' ']'
++++ OCTOPI_MOUNT_PATH=/home/user/OctoPi/src/workspace/mount
++++ '[' -n '' ']'
++++ OCTOPI_OVERRIDE_HOSTNAME=octopi
++++ '[' -n '' ']'
++++ OCTOPI_BUILD_REPO_MIRROR=
++++ '[' -n '' ']'
++++ OCTOPI_OCTOPRINT_REPO_SHIP=https://github.com/foosel/OctoPrint.git
++++ '[' -n '' ']'
++++ OCTOPI_OCTOPRINT_REPO_BUILD=
++++ '[' -n '' ']'
++++ OCTOPI_OCTOPRINT_REPO_BRANCH=master
++++ '[' -n '' ']'
++++ OCTOPI_INCLUDE_OCTOPRINT=yes
++++ '[' -n '' ']'
++++ OCTOPI_OCTOPIPANEL_REPO_SHIP=https://github.com/jonaslorander/OctoPiPanel.git
++++ '[' -n '' ']'
++++ OCTOPI_OCTOPIPANEL_REPO_BUILD=
++++ '[' -n '' ']'
++++ OCTOPI_OCTOPIPANEL_REPO_BRANCH=master
++++ '[' -n '' ']'
++++ OCTOPI_FBCP_REPO_SHIP=https://github.com/tasanakorn/rpi-fbcp
++++ '[' -n '' ']'
++++ OCTOPI_FBCP_REPO_BUILD=https://github.com/tasanakorn/rpi-fbcp
++++ '[' -n '' ']'
++++ OCTOPI_FBCP_REPO_BRANCH=
++++ '[' -n '' ']'
++++ OCTOPI_INCLUDE_OCTOPIPANEL=yes
++++ '[' -n '' ']'
++++ OCTOPI_CURAENGINE_VERSION=15.04
++++ '[' -n '' ']'
++++ OCTOPI_CURAENGINE_ARCHIVE=https://github.com/Ultimaker/CuraEngine/archive/15.04.zip
++++ '[' -n '' ']'
++++ OCTOPI_INCLUDE_CURAENGINE=yes
++++ '[' -n '' ']'
++++ OCTOPI_MJPGSTREAMER_REPO_SHIP=https://github.com/jacksonliam/mjpg-streamer.git
++++ '[' -n '' ']'
++++ OCTOPI_MJPGSTREAMER_REPO_BUILD=
++++ '[' -n '' ']'
++++ OCTOPI_MJPGSTREAMER_REPO_BRANCH=master
++++ '[' -n '' ']'
++++ OCTOPI_INCLUDE_MJPGSTREAMER=yes
++++ '[' -n '' ']'
++++ OCTOPI_HAPROXY_VERSION=1.5.8
++++ '[' -n '' ']'
++++ OCTOPI_HAPROXY_ARCHIVE=http://www.haproxy.org/download/1.5/src/haproxy-1.5.8.tar.gz
++++ '[' -n '' ']'
++++ OCTOPI_INCLUDE_HAPROXY=yes
++++ '[' -n '' ']'
++++ echo ================================================================
+================================================================
++++ echo 'Using the following config:'
+Using the following config:
+++++ grep '^OCTOPI_'
+++++ compgen -A variable
++++ vars='OCTOPI_BUILD_REPO_MIRROR
+OCTOPI_CHROOT_SCRIPT_PATH
+OCTOPI_COMMIT
+OCTOPI_CURAENGINE_ARCHIVE
+OCTOPI_CURAENGINE_VERSION
+OCTOPI_FBCP_REPO_BRANCH
+OCTOPI_FBCP_REPO_BUILD
+OCTOPI_FBCP_REPO_SHIP
+OCTOPI_HAPROXY_ARCHIVE
+OCTOPI_HAPROXY_VERSION
+OCTOPI_IMAGE_PATH
+OCTOPI_INCLUDE_CURAENGINE
+OCTOPI_INCLUDE_HAPROXY
+OCTOPI_INCLUDE_MJPGSTREAMER
+OCTOPI_INCLUDE_OCTOPIPANEL
+OCTOPI_INCLUDE_OCTOPRINT
+OCTOPI_MJPGSTREAMER_REPO_BRANCH
+OCTOPI_MJPGSTREAMER_REPO_BUILD
+OCTOPI_MJPGSTREAMER_REPO_SHIP
+OCTOPI_MOUNT_PATH
+OCTOPI_OCTOPIPANEL_REPO_BRANCH
+OCTOPI_OCTOPIPANEL_REPO_BUILD
+OCTOPI_OCTOPIPANEL_REPO_SHIP
+OCTOPI_OCTOPRINT_REPO_BRANCH
+OCTOPI_OCTOPRINT_REPO_BUILD
+OCTOPI_OCTOPRINT_REPO_SHIP
+OCTOPI_OVERRIDE_HOSTNAME
+OCTOPI_PATH
+OCTOPI_SCRIPT_PATH
+OCTOPI_WORKSPACE
+OCTOPI_ZIP_IMG'
++++ for var in '$vars'
++++ echo 'OCTOPI_BUILD_REPO_MIRROR = '
+OCTOPI_BUILD_REPO_MIRROR = 
++++ eval export OCTOPI_BUILD_REPO_MIRROR
+++++ export OCTOPI_BUILD_REPO_MIRROR
++++ for var in '$vars'
++++ echo 'OCTOPI_CHROOT_SCRIPT_PATH = /home/user/OctoPi/src/chroot_script'
+OCTOPI_CHROOT_SCRIPT_PATH = /home/user/OctoPi/src/chroot_script
++++ eval export OCTOPI_CHROOT_SCRIPT_PATH
+++++ export OCTOPI_CHROOT_SCRIPT_PATH
++++ for var in '$vars'
++++ echo 'OCTOPI_COMMIT = HEAD'
+OCTOPI_COMMIT = HEAD
++++ eval export OCTOPI_COMMIT
+++++ export OCTOPI_COMMIT
++++ for var in '$vars'
++++ echo 'OCTOPI_CURAENGINE_ARCHIVE = https://github.com/Ultimaker/CuraEngine/archive/15.04.zip'
+OCTOPI_CURAENGINE_ARCHIVE = https://github.com/Ultimaker/CuraEngine/archive/15.04.zip
++++ eval export OCTOPI_CURAENGINE_ARCHIVE
+++++ export OCTOPI_CURAENGINE_ARCHIVE
++++ for var in '$vars'
++++ echo 'OCTOPI_CURAENGINE_VERSION = 15.04'
+OCTOPI_CURAENGINE_VERSION = 15.04
++++ eval export OCTOPI_CURAENGINE_VERSION
+++++ export OCTOPI_CURAENGINE_VERSION
++++ for var in '$vars'
++++ echo 'OCTOPI_FBCP_REPO_BRANCH = '
+OCTOPI_FBCP_REPO_BRANCH = 
++++ eval export OCTOPI_FBCP_REPO_BRANCH
+++++ export OCTOPI_FBCP_REPO_BRANCH
++++ for var in '$vars'
++++ echo 'OCTOPI_FBCP_REPO_BUILD = https://github.com/tasanakorn/rpi-fbcp'
+OCTOPI_FBCP_REPO_BUILD = https://github.com/tasanakorn/rpi-fbcp
++++ eval export OCTOPI_FBCP_REPO_BUILD
+++++ export OCTOPI_FBCP_REPO_BUILD
++++ for var in '$vars'
++++ echo 'OCTOPI_FBCP_REPO_SHIP = https://github.com/tasanakorn/rpi-fbcp'
+OCTOPI_FBCP_REPO_SHIP = https://github.com/tasanakorn/rpi-fbcp
++++ eval export OCTOPI_FBCP_REPO_SHIP
+++++ export OCTOPI_FBCP_REPO_SHIP
++++ for var in '$vars'
++++ echo 'OCTOPI_HAPROXY_ARCHIVE = http://www.haproxy.org/download/1.5/src/haproxy-1.5.8.tar.gz'
+OCTOPI_HAPROXY_ARCHIVE = http://www.haproxy.org/download/1.5/src/haproxy-1.5.8.tar.gz
++++ eval export OCTOPI_HAPROXY_ARCHIVE
+++++ export OCTOPI_HAPROXY_ARCHIVE
++++ for var in '$vars'
++++ echo 'OCTOPI_HAPROXY_VERSION = 1.5.8'
+OCTOPI_HAPROXY_VERSION = 1.5.8
++++ eval export OCTOPI_HAPROXY_VERSION
+++++ export OCTOPI_HAPROXY_VERSION
++++ for var in '$vars'
++++ echo 'OCTOPI_IMAGE_PATH = /home/user/OctoPi/src/image'
+OCTOPI_IMAGE_PATH = /home/user/OctoPi/src/image
++++ eval export OCTOPI_IMAGE_PATH
+++++ export OCTOPI_IMAGE_PATH
++++ for var in '$vars'
++++ echo 'OCTOPI_INCLUDE_CURAENGINE = yes'
+OCTOPI_INCLUDE_CURAENGINE = yes
++++ eval export OCTOPI_INCLUDE_CURAENGINE
+++++ export OCTOPI_INCLUDE_CURAENGINE
++++ for var in '$vars'
++++ echo 'OCTOPI_INCLUDE_HAPROXY = yes'
+OCTOPI_INCLUDE_HAPROXY = yes
++++ eval export OCTOPI_INCLUDE_HAPROXY
+++++ export OCTOPI_INCLUDE_HAPROXY
++++ for var in '$vars'
++++ echo 'OCTOPI_INCLUDE_MJPGSTREAMER = yes'
+OCTOPI_INCLUDE_MJPGSTREAMER = yes
++++ eval export OCTOPI_INCLUDE_MJPGSTREAMER
+++++ export OCTOPI_INCLUDE_MJPGSTREAMER
++++ for var in '$vars'
++++ echo 'OCTOPI_INCLUDE_OCTOPIPANEL = yes'
+OCTOPI_INCLUDE_OCTOPIPANEL = yes
++++ eval export OCTOPI_INCLUDE_OCTOPIPANEL
+++++ export OCTOPI_INCLUDE_OCTOPIPANEL
++++ for var in '$vars'
++++ echo 'OCTOPI_INCLUDE_OCTOPRINT = yes'
+OCTOPI_INCLUDE_OCTOPRINT = yes
++++ eval export OCTOPI_INCLUDE_OCTOPRINT
+++++ export OCTOPI_INCLUDE_OCTOPRINT
++++ for var in '$vars'
++++ echo 'OCTOPI_MJPGSTREAMER_REPO_BRANCH = master'
+OCTOPI_MJPGSTREAMER_REPO_BRANCH = master
++++ eval export OCTOPI_MJPGSTREAMER_REPO_BRANCH
+++++ export OCTOPI_MJPGSTREAMER_REPO_BRANCH
++++ for var in '$vars'
++++ echo 'OCTOPI_MJPGSTREAMER_REPO_BUILD = '
+OCTOPI_MJPGSTREAMER_REPO_BUILD = 
++++ eval export OCTOPI_MJPGSTREAMER_REPO_BUILD
+++++ export OCTOPI_MJPGSTREAMER_REPO_BUILD
++++ for var in '$vars'
++++ echo 'OCTOPI_MJPGSTREAMER_REPO_SHIP = https://github.com/jacksonliam/mjpg-streamer.git'
+OCTOPI_MJPGSTREAMER_REPO_SHIP = https://github.com/jacksonliam/mjpg-streamer.git
++++ eval export OCTOPI_MJPGSTREAMER_REPO_SHIP
+++++ export OCTOPI_MJPGSTREAMER_REPO_SHIP
++++ for var in '$vars'
++++ echo 'OCTOPI_MOUNT_PATH = /home/user/OctoPi/src/workspace/mount'
+OCTOPI_MOUNT_PATH = /home/user/OctoPi/src/workspace/mount
++++ eval export OCTOPI_MOUNT_PATH
+++++ export OCTOPI_MOUNT_PATH
++++ for var in '$vars'
++++ echo 'OCTOPI_OCTOPIPANEL_REPO_BRANCH = master'
+OCTOPI_OCTOPIPANEL_REPO_BRANCH = master
++++ eval export OCTOPI_OCTOPIPANEL_REPO_BRANCH
+++++ export OCTOPI_OCTOPIPANEL_REPO_BRANCH
++++ for var in '$vars'
++++ echo 'OCTOPI_OCTOPIPANEL_REPO_BUILD = '
+OCTOPI_OCTOPIPANEL_REPO_BUILD = 
++++ eval export OCTOPI_OCTOPIPANEL_REPO_BUILD
+++++ export OCTOPI_OCTOPIPANEL_REPO_BUILD
++++ for var in '$vars'
++++ echo 'OCTOPI_OCTOPIPANEL_REPO_SHIP = https://github.com/jonaslorander/OctoPiPanel.git'
+OCTOPI_OCTOPIPANEL_REPO_SHIP = https://github.com/jonaslorander/OctoPiPanel.git
++++ eval export OCTOPI_OCTOPIPANEL_REPO_SHIP
+++++ export OCTOPI_OCTOPIPANEL_REPO_SHIP
++++ for var in '$vars'
++++ echo 'OCTOPI_OCTOPRINT_REPO_BRANCH = master'
+OCTOPI_OCTOPRINT_REPO_BRANCH = master
++++ eval export OCTOPI_OCTOPRINT_REPO_BRANCH
+++++ export OCTOPI_OCTOPRINT_REPO_BRANCH
++++ for var in '$vars'
++++ echo 'OCTOPI_OCTOPRINT_REPO_BUILD = '
+OCTOPI_OCTOPRINT_REPO_BUILD = 
++++ eval export OCTOPI_OCTOPRINT_REPO_BUILD
+++++ export OCTOPI_OCTOPRINT_REPO_BUILD
++++ for var in '$vars'
++++ echo 'OCTOPI_OCTOPRINT_REPO_SHIP = https://github.com/foosel/OctoPrint.git'
+OCTOPI_OCTOPRINT_REPO_SHIP = https://github.com/foosel/OctoPrint.git
++++ eval export OCTOPI_OCTOPRINT_REPO_SHIP
+++++ export OCTOPI_OCTOPRINT_REPO_SHIP
++++ for var in '$vars'
++++ echo 'OCTOPI_OVERRIDE_HOSTNAME = octopi'
+OCTOPI_OVERRIDE_HOSTNAME = octopi
++++ eval export OCTOPI_OVERRIDE_HOSTNAME
+++++ export OCTOPI_OVERRIDE_HOSTNAME
++++ for var in '$vars'
++++ echo 'OCTOPI_PATH = /home/user/OctoPi/src'
+OCTOPI_PATH = /home/user/OctoPi/src
++++ eval export OCTOPI_PATH
+++++ export OCTOPI_PATH
++++ for var in '$vars'
++++ echo 'OCTOPI_SCRIPT_PATH = /home/user/OctoPi/src'
+OCTOPI_SCRIPT_PATH = /home/user/OctoPi/src
++++ eval export OCTOPI_SCRIPT_PATH
+++++ export OCTOPI_SCRIPT_PATH
++++ for var in '$vars'
++++ echo 'OCTOPI_WORKSPACE = /home/user/OctoPi/src/workspace'
+OCTOPI_WORKSPACE = /home/user/OctoPi/src/workspace
++++ eval export OCTOPI_WORKSPACE
+++++ export OCTOPI_WORKSPACE
++++ for var in '$vars'
++++ echo 'OCTOPI_ZIP_IMG = /home/user/OctoPi/src/image/2015-raspbian-wheezy.zip'
+OCTOPI_ZIP_IMG = /home/user/OctoPi/src/image/2015-raspbian-wheezy.zip
++++ eval export OCTOPI_ZIP_IMG
+++++ export OCTOPI_ZIP_IMG
++++ echo ================================================================
+================================================================
+++ '[' '' == yes ']'
+++ source /home/user/OctoPi/src/octopi
++++ source /home/user/OctoPi/src/common.sh
++++ mkdir -p /home/user/OctoPi/src/workspace
++++ mkdir -p /home/user/OctoPi/src/workspace/mount
++++ install_fail_on_error_trap /home/user/OctoPi/src/workspace/mount
++++ set -e
++++ trap 'previous_command=$this_command; this_command=$BASH_COMMAND' DEBUG
+++++ previous_command=
+++++ this_command='trap '\''if [ $? -ne 0 ]; then echo -e "\nexit $? due to $previous_command \nBUILD FAILED!" && echo "unmounting image..." && ( unmount_image $OCTOPI_MOUNT_PATH || true ); fi;'\'' EXIT'
++++ trap 'if [ $? -ne 0 ]; then echo -e "\nexit $? due to $previous_command \nBUILD FAILED!" && echo "unmounting image..." && ( unmount_image $OCTOPI_MOUNT_PATH || true ); fi;' EXIT
+++++ previous_command='trap '\''if [ $? -ne 0 ]; then echo -e "\nexit $? due to $previous_command \nBUILD FAILED!" && echo "unmounting image..." && ( unmount_image $OCTOPI_MOUNT_PATH || true ); fi;'\'' EXIT'
+++++ this_command='unmount_image $OCTOPI_MOUNT_PATH'
++++ unmount_image /home/user/OctoPi/src/workspace/mount
++++ mount_path=/home/user/OctoPi/src/workspace/mount
++++ sudo umount /home/user/OctoPi/src/workspace/mount/boot
+umount: /home/user/OctoPi/src/workspace/mount/boot: not found
++++ sudo umount /home/user/OctoPi/src/workspace/mount
+umount: /home/user/OctoPi/src/workspace/mount: not mounted
+++++ previous_command='unmount_image $OCTOPI_MOUNT_PATH'
+++++ this_command=true
++++ true
+++++ previous_command=true
+++++ this_command='pushd $OCTOPI_WORKSPACE'
++++ pushd /home/user/OctoPi/src/workspace
+~/OctoPi/src/workspace ~/OctoPi/src
+++++ previous_command='pushd $OCTOPI_WORKSPACE'
+++++ this_command='[ -e *.img ]'
++++ '[' -e 2015-05-05-raspbian-wheezy.img ']'
+++++ previous_command='[ -e *.img ]'
+++++ this_command='rm *.img'
++++ rm 2015-05-05-raspbian-wheezy.img
+++++ previous_command='rm *.img'
+++++ this_command='unzip $OCTOPI_ZIP_IMG'
++++ unzip /home/user/OctoPi/src/image/2015-raspbian-wheezy.zip
+Archive:  /home/user/OctoPi/src/image/2015-raspbian-wheezy.zip
+  inflating: 2015-05-05-raspbian-wheezy.img  
