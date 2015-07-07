@@ -1,4 +1,8 @@
 # see http://about.travis-ci.org/docs/user/languages/php/ for more hints
 language: erlang
 script: bash build_script.bash
+sudo: required
+ 
+notifications:
+   email:theo.segonds+travisspam@gmail.com
 
