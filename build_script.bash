@@ -1,7 +1,9 @@
 #!/bin/bash
 set -x
+
 echo $PWD
 cd $CI_HOME
+echo $PWD
 
 if [ ! -f src/image/*.zip ]
 then
