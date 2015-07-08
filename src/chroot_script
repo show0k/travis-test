@@ -1,9 +1,14 @@
 #!/usr/bin/env bash
 set -x
+source $OCTOPI_SCRIPT_PATH/common.sh
 echo $OCTOPI_IMG_PATH
 echo "I AM HERE"
 echo $PWD
 apt-get remove -y --purge scratch squeak-plugins-scratch squeak-vm wolfram-engine python-minecraftpi minecraft-pi sonic-pi oracle-java8-jdk
 wget https://raw.githubusercontent.com/poppy-project/poppy-installer/master/poppy-configure.sh
 sudo bash poppy-configure.sh rpi poppy-ergo-jr
+
+# after build
+echo $OCTOPI_PATH
+cd $OCTOPI_PATH
 

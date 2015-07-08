@@ -1,13 +1,17 @@
 # see http://about.travis-ci.org/docs/user/languages/php/ for more hints
 language: d
-script: bash build_script.bash
 sudo: required
 
 env:
+  - ARCH=x64
+  - ARCH=arm
+  
   global:
     - REPO="show0k/travis-test"
     - CI_HOME=`pwd`/$REPO
 
 notifications:
    email:theo.segonds+travisspam@gmail.com
-
+   
+# script: bash build_script.bash
+script: bash -x .travis-ci.sh

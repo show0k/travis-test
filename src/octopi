@@ -36,7 +36,7 @@ pushd $OCTOPI_WORKSPACE
     rm *.img
   fi
   # "${OCTOPI_ZIP_IMG%.*}.img"
-  OCTOPI_IMG_PATH=$PWD/Poppy_rpi.img
+  export OCTOPI_IMG_PATH=$PWD/Poppy_rpi.img
   unzip -p $OCTOPI_ZIP_IMG | pv > $OCTOPI_IMG_PATH
   #OCTOPI_IMG_PATH=`ls | grep .img`
 
