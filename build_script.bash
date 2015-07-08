@@ -4,7 +4,7 @@ set -x
 echo $PWD
 #cd $CI_HOME
 #echo $PWD
-
+sudo apt-get install -y realpath qemu-user-static 
 if [ ! -f src/image/*.zip ]
 then
   pushd src/image/
