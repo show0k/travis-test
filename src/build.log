@@ -1,17 +1,18 @@
 ++++ realpath -s build
-+++ dirname /home/user/OctoPi/src/build
-++ BUILD_SCRIPT__PATH=/home/user/OctoPi/src
-++ source /home/user/OctoPi/src/common.sh
++++ dirname /home/theo/tmp/travis-test/src/build
+++ BUILD_SCRIPT__PATH=/home/theo/tmp/travis-test/src
+++ source /home/theo/tmp/travis-test/src/common.sh
++++ set -x
 ++++ realpath -s build
-+++ dirname /home/user/OctoPi/src/build
-++ OCTOPI_PATH=/home/user/OctoPi/src
-++ pushd /home/user/OctoPi/src
-~/OctoPi/src ~/OctoPi/src
++++ dirname /home/theo/tmp/travis-test/src/build
+++ OCTOPI_PATH=/home/theo/tmp/travis-test/src
+++ pushd /home/theo/tmp/travis-test/src
+~/tmp/travis-test/src ~/tmp/travis-test/src
 +++ git rev-parse HEAD
-++ export OCTOPI_COMMIT=149ab4f29aec19a3ec1634f76a781130faad8905
-++ OCTOPI_COMMIT=149ab4f29aec19a3ec1634f76a781130faad8905
+++ export OCTOPI_COMMIT=62f0781ba082904fbe737a966aaa87abe2777bc0
+++ OCTOPI_COMMIT=62f0781ba082904fbe737a966aaa87abe2777bc0
 ++ popd
-~/OctoPi/src
+~/tmp/travis-test/src
 ++ BUILD_VARIANT=default
 ++ BUILD_FLAVOR=default
 ++ WORKSPACE_POSTFIX=
@@ -20,27 +21,27 @@
 ++ '[' default '!=' default ']'
 ++ echo -e '--> Building VARIANT default, FLAVOR default'
 --> Building VARIANT default, FLAVOR default
-++ source /home/user/OctoPi/src/config
-+++++ realpath -s /home/user/OctoPi/src/config
-++++ dirname /home/user/OctoPi/src/config
-+++ CONFIG_DIR=/home/user/OctoPi/src
+++ source /home/theo/tmp/travis-test/src/config
++++++ realpath -s /home/theo/tmp/travis-test/src/config
+++++ dirname /home/theo/tmp/travis-test/src/config
++++ CONFIG_DIR=/home/theo/tmp/travis-test/src
 +++ '[' -n '' ']'
 +++ '[' -n '' ']'
-+++ '[' -f /home/user/OctoPi/src/config.local ']'
++++ '[' -f /home/theo/tmp/travis-test/src/config.local ']'
 +++ '[' -n '' ']'
-+++ OCTOPI_SCRIPT_PATH=/home/user/OctoPi/src
++++ OCTOPI_SCRIPT_PATH=/home/theo/tmp/travis-test/src
 +++ '[' -n '' ']'
-+++ OCTOPI_IMAGE_PATH=/home/user/OctoPi/src/image
++++ OCTOPI_IMAGE_PATH=/home/theo/tmp/travis-test/src/image
 +++ '[' -n '' ']'
 ++++ head -n 1
-++++ ls -t /home/user/OctoPi/src/image/2015-raspbian-wheezy.zip
-+++ OCTOPI_ZIP_IMG=/home/user/OctoPi/src/image/2015-raspbian-wheezy.zip
+++++ ls -t /home/theo/tmp/travis-test/src/image/2015-05-05-raspbian-wheezy.zip
++++ OCTOPI_ZIP_IMG=/home/theo/tmp/travis-test/src/image/2015-05-05-raspbian-wheezy.zip
 +++ '[' -n '' ']'
-+++ OCTOPI_WORKSPACE=/home/user/OctoPi/src/workspace
++++ OCTOPI_WORKSPACE=/home/theo/tmp/travis-test/src/workspace
 +++ '[' -n '' ']'
-+++ OCTOPI_CHROOT_SCRIPT_PATH=/home/user/OctoPi/src/chroot_script
++++ OCTOPI_CHROOT_SCRIPT_PATH=/home/theo/tmp/travis-test/src/chroot_script
 +++ '[' -n '' ']'
-+++ OCTOPI_MOUNT_PATH=/home/user/OctoPi/src/workspace/mount
++++ OCTOPI_MOUNT_PATH=/home/theo/tmp/travis-test/src/workspace/mount
 +++ '[' -n '' ']'
 +++ OCTOPI_OVERRIDE_HOSTNAME=octopi
 +++ '[' -n '' ']'
@@ -92,8 +93,8 @@
 ================================================================
 +++ echo 'Using the following config:'
 Using the following config:
-++++ grep '^OCTOPI_'
 ++++ compgen -A variable
+++++ grep '^OCTOPI_'
 +++ vars='OCTOPI_BUILD_REPO_MIRROR
 OCTOPI_CHROOT_SCRIPT_PATH
 OCTOPI_COMMIT
@@ -131,13 +132,13 @@ OCTOPI_BUILD_REPO_MIRROR =
 +++ eval export OCTOPI_BUILD_REPO_MIRROR
 ++++ export OCTOPI_BUILD_REPO_MIRROR
 +++ for var in '$vars'
-+++ echo 'OCTOPI_CHROOT_SCRIPT_PATH = /home/user/OctoPi/src/chroot_script'
-OCTOPI_CHROOT_SCRIPT_PATH = /home/user/OctoPi/src/chroot_script
++++ echo 'OCTOPI_CHROOT_SCRIPT_PATH = /home/theo/tmp/travis-test/src/chroot_script'
+OCTOPI_CHROOT_SCRIPT_PATH = /home/theo/tmp/travis-test/src/chroot_script
 +++ eval export OCTOPI_CHROOT_SCRIPT_PATH
 ++++ export OCTOPI_CHROOT_SCRIPT_PATH
 +++ for var in '$vars'
-+++ echo 'OCTOPI_COMMIT = 149ab4f29aec19a3ec1634f76a781130faad8905'
-OCTOPI_COMMIT = 149ab4f29aec19a3ec1634f76a781130faad8905
++++ echo 'OCTOPI_COMMIT = 62f0781ba082904fbe737a966aaa87abe2777bc0'
+OCTOPI_COMMIT = 62f0781ba082904fbe737a966aaa87abe2777bc0
 +++ eval export OCTOPI_COMMIT
 ++++ export OCTOPI_COMMIT
 +++ for var in '$vars'
@@ -176,8 +177,8 @@ OCTOPI_HAPROXY_VERSION = 1.5.8
 +++ eval export OCTOPI_HAPROXY_VERSION
 ++++ export OCTOPI_HAPROXY_VERSION
 +++ for var in '$vars'
-+++ echo 'OCTOPI_IMAGE_PATH = /home/user/OctoPi/src/image'
-OCTOPI_IMAGE_PATH = /home/user/OctoPi/src/image
++++ echo 'OCTOPI_IMAGE_PATH = /home/theo/tmp/travis-test/src/image'
+OCTOPI_IMAGE_PATH = /home/theo/tmp/travis-test/src/image
 +++ eval export OCTOPI_IMAGE_PATH
 ++++ export OCTOPI_IMAGE_PATH
 +++ for var in '$vars'
@@ -221,8 +222,8 @@ OCTOPI_MJPGSTREAMER_REPO_SHIP = https://github.com/jacksonliam/mjpg-streamer.git
 +++ eval export OCTOPI_MJPGSTREAMER_REPO_SHIP
 ++++ export OCTOPI_MJPGSTREAMER_REPO_SHIP
 +++ for var in '$vars'
-+++ echo 'OCTOPI_MOUNT_PATH = /home/user/OctoPi/src/workspace/mount'
-OCTOPI_MOUNT_PATH = /home/user/OctoPi/src/workspace/mount
++++ echo 'OCTOPI_MOUNT_PATH = /home/theo/tmp/travis-test/src/workspace/mount'
+OCTOPI_MOUNT_PATH = /home/theo/tmp/travis-test/src/workspace/mount
 +++ eval export OCTOPI_MOUNT_PATH
 ++++ export OCTOPI_MOUNT_PATH
 +++ for var in '$vars'
@@ -261,33 +262,34 @@ OCTOPI_OVERRIDE_HOSTNAME = octopi
 +++ eval export OCTOPI_OVERRIDE_HOSTNAME
 ++++ export OCTOPI_OVERRIDE_HOSTNAME
 +++ for var in '$vars'
-+++ echo 'OCTOPI_PATH = /home/user/OctoPi/src'
-OCTOPI_PATH = /home/user/OctoPi/src
++++ echo 'OCTOPI_PATH = /home/theo/tmp/travis-test/src'
+OCTOPI_PATH = /home/theo/tmp/travis-test/src
 +++ eval export OCTOPI_PATH
 ++++ export OCTOPI_PATH
 +++ for var in '$vars'
-+++ echo 'OCTOPI_SCRIPT_PATH = /home/user/OctoPi/src'
-OCTOPI_SCRIPT_PATH = /home/user/OctoPi/src
++++ echo 'OCTOPI_SCRIPT_PATH = /home/theo/tmp/travis-test/src'
+OCTOPI_SCRIPT_PATH = /home/theo/tmp/travis-test/src
 +++ eval export OCTOPI_SCRIPT_PATH
 ++++ export OCTOPI_SCRIPT_PATH
 +++ for var in '$vars'
-+++ echo 'OCTOPI_WORKSPACE = /home/user/OctoPi/src/workspace'
-OCTOPI_WORKSPACE = /home/user/OctoPi/src/workspace
++++ echo 'OCTOPI_WORKSPACE = /home/theo/tmp/travis-test/src/workspace'
+OCTOPI_WORKSPACE = /home/theo/tmp/travis-test/src/workspace
 +++ eval export OCTOPI_WORKSPACE
 ++++ export OCTOPI_WORKSPACE
 +++ for var in '$vars'
-+++ echo 'OCTOPI_ZIP_IMG = /home/user/OctoPi/src/image/2015-raspbian-wheezy.zip'
-OCTOPI_ZIP_IMG = /home/user/OctoPi/src/image/2015-raspbian-wheezy.zip
++++ echo 'OCTOPI_ZIP_IMG = /home/theo/tmp/travis-test/src/image/2015-05-05-raspbian-wheezy.zip'
+OCTOPI_ZIP_IMG = /home/theo/tmp/travis-test/src/image/2015-05-05-raspbian-wheezy.zip
 +++ eval export OCTOPI_ZIP_IMG
 ++++ export OCTOPI_ZIP_IMG
 +++ echo ================================================================
 ================================================================
 ++ '[' '' == yes ']'
-++ source /home/user/OctoPi/src/octopi
-+++ source /home/user/OctoPi/src/common.sh
-+++ mkdir -p /home/user/OctoPi/src/workspace
-+++ mkdir -p /home/user/OctoPi/src/workspace/mount
-+++ install_fail_on_error_trap /home/user/OctoPi/src/workspace/mount
+++ source /home/theo/tmp/travis-test/src/octopi
++++ source /home/theo/tmp/travis-test/src/common.sh
+++++ set -x
++++ mkdir -p /home/theo/tmp/travis-test/src/workspace
++++ mkdir -p /home/theo/tmp/travis-test/src/workspace/mount
++++ install_fail_on_error_trap /home/theo/tmp/travis-test/src/workspace/mount
 +++ set -e
 +++ trap 'previous_command=$this_command; this_command=$BASH_COMMAND' DEBUG
 ++++ previous_command=
@@ -295,24 +297,28 @@ OCTOPI_ZIP_IMG = /home/user/OctoPi/src/image/2015-raspbian-wheezy.zip
 +++ trap 'if [ $? -ne 0 ]; then echo -e "\nexit $? due to $previous_command \nBUILD FAILED!" && echo "unmounting image..." && ( unmount_image $OCTOPI_MOUNT_PATH || true ); fi;' EXIT
 ++++ previous_command='trap '\''if [ $? -ne 0 ]; then echo -e "\nexit $? due to $previous_command \nBUILD FAILED!" && echo "unmounting image..." && ( unmount_image $OCTOPI_MOUNT_PATH || true ); fi;'\'' EXIT'
 ++++ this_command='unmount_image $OCTOPI_MOUNT_PATH'
-+++ unmount_image /home/user/OctoPi/src/workspace/mount
-+++ mount_path=/home/user/OctoPi/src/workspace/mount
-+++ sudo umount /home/user/OctoPi/src/workspace/mount/boot
-umount: /home/user/OctoPi/src/workspace/mount/boot: not found
-+++ sudo umount /home/user/OctoPi/src/workspace/mount
-umount: /home/user/OctoPi/src/workspace/mount: not mounted
++++ unmount_image /home/theo/tmp/travis-test/src/workspace/mount
++++ mount_path=/home/theo/tmp/travis-test/src/workspace/mount
++++ sudo umount /home/theo/tmp/travis-test/src/workspace/mount/boot
+umount : /home/theo/tmp/travis-test/src/workspace/mount/boot : introuvable
++++ sudo umount /home/theo/tmp/travis-test/src/workspace/mount
+umount : /home/theo/tmp/travis-test/src/workspace/mount : n'est pas monté
 ++++ previous_command='unmount_image $OCTOPI_MOUNT_PATH'
 ++++ this_command=true
 +++ true
 ++++ previous_command=true
 ++++ this_command='pushd $OCTOPI_WORKSPACE'
-+++ pushd /home/user/OctoPi/src/workspace
-~/OctoPi/src/workspace ~/OctoPi/src
++++ pushd /home/theo/tmp/travis-test/src/workspace
+~/tmp/travis-test/src/workspace ~/tmp/travis-test/src
 ++++ previous_command='pushd $OCTOPI_WORKSPACE'
 ++++ this_command='[ -e *.img ]'
 +++ '[' -e '*.img' ']'
 ++++ previous_command='[ -e *.img ]'
-++++ this_command='unzip $OCTOPI_ZIP_IMG'
-+++ unzip /home/user/OctoPi/src/image/2015-raspbian-wheezy.zip
-Archive:  /home/user/OctoPi/src/image/2015-raspbian-wheezy.zip
-  inflating: 2015-05-05-raspbian-wheezy.img  
+++++ this_command='OCTOPI_IMG_PATH=$PWD/Poppy_rpi.img'
++++ OCTOPI_IMG_PATH=/home/theo/tmp/travis-test/src/workspace/Poppy_rpi.img
+++++ previous_command='OCTOPI_IMG_PATH=$PWD/Poppy_rpi.img'
+++++ this_command='unzip -p $OCTOPI_ZIP_IMG'
+++++ previous_command='unzip -p $OCTOPI_ZIP_IMG'
+++++ this_command='pv > $OCTOPI_IMG_PATH'
++++ unzip -p /home/theo/tmp/travis-test/src/image/2015-05-05-raspbian-wheezy.zip
++++ pv

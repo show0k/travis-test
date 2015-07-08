@@ -6,6 +6,7 @@ echo $PWD
 #echo $PWD
 sudo apt-get update -qq
 sudo apt-get install -y realpath qemu-user-static curl pv
+modprobe loop
 if [ ! -f src/image/*.zip ]
 then
   pushd src/image/
