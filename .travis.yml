@@ -1,6 +1,7 @@
 # see http://about.travis-ci.org/docs/user/languages/php/ for more hints
 language: c
 sudo: required
+script: bash -x travis-ci.sh
 
 env:
   - ARCH=x64
@@ -14,4 +15,4 @@ notifications:
    email:theo.segonds+travisspam@gmail.com
    
 # script: bash build_script.bash
-script: bash -x travis-ci.sh
+
