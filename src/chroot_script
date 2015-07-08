@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -x
-
+echo $OCTOPI_IMG_PATH
 echo "I AM HERE"
 echo $PWD
 apt-get remove -y --purge scratch squeak-plugins-scratch squeak-vm wolfram-engine python-minecraftpi minecraft-pi sonic-pi oracle-java8-jdk
