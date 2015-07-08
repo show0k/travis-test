@@ -2,3 +2,4 @@ src/config.local
 src/image/*.zip
 workspace/*.img
 *.img
+*.log
