@@ -1,9 +1,11 @@
 #!/bin/bash
 set -x
+set -e
 
 echo $PWD
 #cd $CI_HOME
 #echo $PWD
+sudo apt-get update
 sudo apt-get install -y realpath qemu-user-static 
 if [ ! -f src/image/*.zip ]
 then
