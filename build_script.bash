@@ -6,7 +6,7 @@ echo $PWD
 #cd $CI_HOME
 #echo $PWD
 sudo apt-get update
-sudo apt-get install -y realpath qemu-user-static 
+sudo apt-get install -y realpath qemu-user-static curl
 if [ ! -f src/image/*.zip ]
 then
   pushd src/image/
