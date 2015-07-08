@@ -14,4 +14,4 @@ notifications:
    email:theo.segonds+travisspam@gmail.com
    
 # script: bash build_script.bash
-script: bash -x .travis-ci.sh
+script: bash -x travis-ci.sh
