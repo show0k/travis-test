@@ -35,7 +35,7 @@ pushd $OCTOPI_WORKSPACE
   if [ -e *.img ]; then  
     rm *.img
   fi
-  unzip $OCTOPI_ZIP_IMG
+  unzip -p $OCTOPI_ZIP_IMG | pv > $OCTOPI_IMG_PATH
   OCTOPI_IMG_PATH=`ls | grep .img`
 
   # mount root and boot partition
